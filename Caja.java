@@ -13,12 +13,12 @@ public class Caja {
 		
 		int salario = empleado.getLegajo() + empleado.getSueldo();
 		
-		int[] queBilletes	= new int[billetes.length];		/* Crea un nuevo array para ir guardando qué billetes deberán ser utilizados para pagar */
-		int posBilletes 	= 0;					/* Variable utilizada para saber a qué billete le incrementamos el contador (L33)*/		
-		int cantBilletes	= 0;							
+		int[] queBilletes = new int[billetes.length];			/* Crea un nuevo array para ir guardando qué billetes deberán ser utilizados para pagar */
+		int posBilletes   = 0;						/* Variable utilizada para saber a qué billete le incrementamos el contador (L33)*/		
+		int cantBilletes  = 0;							
 		
-		int posArray		= billetes.length - 1;			/* Variable utilizada para comenzar a descender desde el mayor billete hasta el menor */	
-		int divisaActual	= billetes[posArray];			/* Se encarga de almacenar en que valor del array estamos */
+		int posArray	  = billetes.length - 1;			/* Variable utilizada para comenzar a descender desde el mayor billete hasta el menor */	
+		int divisaActual  = billetes[posArray];				/* Se encarga de almacenar en que valor del array estamos */
 		
 		do {
 			while(salario >= divisaActual) {			/* Analiza si el billete actual es denominador o necesita cambiar al próximo menor valor */
