@@ -10,15 +10,13 @@ public class Caja2 {
 		
 		int i = 0, j = 0;
 		
-		while(i < billetes.length && acumula < salario) {
-			
+		while(i < billetes.length && acumula < salario) {		
 			double r = auxiliar / billetes[i];			
 			resultados[i] = (int)r;		
 			
 			auxiliar = (((r + 0.000000001) - (int)r)*billetes[i]);
 			acumula += resultados[i]*billetes[i];
 			i++;
-
 		}
 		
 		for(int n : resultados) {
